@@ -1,8 +1,10 @@
 h1{
     color: blueviolet;
+    outline-color: black;
     margin-left: 20px;
 }
 
 body{
-    background-color: green;
+    background-image: url(media/gaybird.jpg);
 }
+
