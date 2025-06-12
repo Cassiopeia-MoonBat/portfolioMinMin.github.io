@@ -1,7 +1,8 @@
 h1{
     color: blueviolet;
     outline-color: black;
-    position: central;
+    text-align: center;
+    background-color: orange;
 }
 
 body{
