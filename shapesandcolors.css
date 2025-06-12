@@ -1,10 +1,11 @@
 h1{
     color: blueviolet;
     outline-color: black;
-    position: center;
+    position: central;
 }
 
 body{
     background-image: url("media/gaybird.jpg");
+    position-anchor: central;
 }
 
