@@ -6,6 +6,8 @@ h1{
 
 body{
     background-image: url("media/gaybird.jpg");
-    position-anchor: central;
+    background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
 
