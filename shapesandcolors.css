@@ -1,16 +1,17 @@
 h1{
     color: blueviolet;
     outline-color: black;
-    outline-style: solid;
+    outline-style: ridge;
     text-align: center;
-    background-color: orange;
+    text-shadow: 10px;
 }
 
 body{
     background-image: url("media/gaybird.jpg");
     background-repeat: no-repeat;
     background-position: right top;
-    background-attachment: fixed;
-    background-size: fill;
+    background-attachment: scroll;
+    max-width: 100%;
+    height: auto;
 }
 
