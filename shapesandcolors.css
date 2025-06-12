@@ -9,7 +9,7 @@ h1{
 body{
     background-image: url("media/gaybird.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: center;
     background-attachment: scroll;
     max-width: 100%;
     height: auto;
