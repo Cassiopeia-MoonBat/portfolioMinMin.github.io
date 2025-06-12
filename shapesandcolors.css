@@ -1,6 +1,7 @@
 h1{
     color: blueviolet;
     outline-color: black;
+    outline-style: solid;
     text-align: center;
     background-color: orange;
 }
@@ -10,5 +11,6 @@ body{
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
+    background-size: auto;
 }
 
