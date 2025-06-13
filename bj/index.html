@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<title>Blackjack</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+	</style>
+</head>
+
+<body>
+	
+
+
+
+
+
+	<!-- NameEingebenFenster -->
+	<div id="NameEingebenFenster">
+		<p>Wer spielt gerade?:</p>
+		<input id="inputID" type="text">
+	</div>
+	
+	
+	
+	<h1 id="ueberschrift" class="wichtig">Black Jack</h1>
+
+	<p></p>
+
+	<p id="knopf1" class="classica">
+		<a>
+			<button id="submit" onclick="Start()"> Start </button>
+		</a>
+	</p>
+
+	
+	<!--  Div Zahlwert spieler -->
+	<!--<div  class="box">-->
+	<a id="Wertsk" class="wertsk">
+	</a>
+	<!--</div>-->
+	
+	<a id="Wertdk" class="wertdk">
+	</a>
+
+
+
+	<div id="Kstapel" >
+	</div>
+	
+	
+	
+	<div class="Kstapel"></div>
+
+	<!--      V = Knöpfe zum bedienen        -->
+
+
+	<div id="schalter" class="weg">
+	
+		<p class="hit" id="hit">
+			<a>
+				<button id="submit2" onclick="hit()"> hit </button>
+			</a>
+		</p>
+		
+		<p class="stand" id="stand" >
+			<a>
+				<button id="submit2" onclick="stand()"> stand </button>
+			</a>
+		</p>
+		
+		
+		<p class="double" id="double">
+			<a>
+				<button id="submit2" onclick="double()"> double </button>
+			</a>
+		</p>
+		
+		
+		
+		<p class="split" id="split">
+			<a>
+				<button id="submit2" onclick="split()"> split </button>
+			</a>
+		</p>
+	</div>
+	
+
+	
+	<!--                 Popup                   -->
+	
+	
+	<div class="ppp" id="popup">
+		<h2 id="popupText">test</h2>
+		<button id="submit3" onclick="popupWeg()">ok</button>
+	</div>
+
+	<!-- punktestand -->
+	
+	
+	<div class="pktalg" >
+		<h3 class="h3" >
+		Spielstände:
+		</h3>
+		<div id="punktestand">
+			
+		</div>
+	</div>	
+
+
+	<div id="submit5">
+	Erstellt von:
+	<br>
+	BTG-1	Robin Maier
+	<br>
+	BTG-1	Mina Böttcher 
+		
+		
+	</div>
+
+
+
+
+
+
+
+
+	<!-- Hilfe POPUP-->
+
+
+	<a>
+			<button id="submit4" onclick="hilfe()"> Hilfe </button>
+	</a>
+	
+			<div id="openModal" class="modalDialog">
+				<div>
+				<a href="#close" title="Schließen" class="close">X</a>
+				
+					<h2>Erklärung</h2>
+					<p> 
+						Ziel:
+				<br>	des Spiels ist es, mit zwei oder mehr Karten näher an 21 Punkte heranzukommen als der Dealer, ohne dabei den Wert von 21 Punkten zu überschreiten.
+		    <br><br>
+						Einsatz: Immer 1 (ausnahme: siehe "Double")	
+			<br><br> Werte: <br>
+						-Asse zählen nach Belieben ein oder elf Punkte. (Automatisch nach Gunsten des Spielers)
+			<br>		-Zweier bis Zehner zählen entsprechend ihren Augen.
+			<br>		-Bildkarten (Buben, Damen, Könige) zählen zehn Punkte.
+			
+			<br><br>	Hit: Der*Die Spieler*in nimmt eine Karte. <br>
+				<br>	Stand: Der*Die Spieler*in <br>
+				<br>	Double: Der*Die Spieler*in kann den Einsatz verdoppeln. Anschließend wird danach noch genau eine Karte zugeteilt.	 <br>
+					</p>
+				</div>
+			</div>
+
+	
+	<!-- Kartenzeug -->
+	
+	
+	<div id="dk" class="Dealerkarten">
+	</div>
+	
+	<div id="sk" class="SpielerKarten">
+	</div>
+	
+	
+	
+	<script src="js/bj.js">
+	</script>
+	<script>
+		function hilfe() { 
+		 window.location.href="#openModal";
+		}
+	</script>
+ 
+
+</body>
+
+</html>
