@@ -7,20 +7,19 @@ h1{
     text-shadow: 10px;
 }
 
+
 body{
     
-    /*  background-image: url("media/gaybird.jpg"); */
-	/*  background-repeat: no-repeat; */
-    /*  background-attachment: fixed; */
-	/*  background-size: cover; */
-
-}
-
-.background-img{
-
-    background:url('media/BongoCat.png');
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+    /*  background-image: url("media/gaybird.jpg"); 
+	  background-repeat: no-repeat; 
+      background-attachment: fixed;
+	  background-size: cover; 
+    */
+    
+    
+   background-color: white; /*Default bg, similar to the background's base color*/
+   background-image: url("media/BongoCat.png");
+   background-position: right bottom; /*Positioning*/
+   background-repeat: no-repeat; /*Prevent showing multiple background images*/
 
 }
