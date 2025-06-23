@@ -18,7 +18,7 @@ body{
     
     
    background-color: #ffff; /*Default bg, similar to the background's base color*/
-   background-image: url("/media/BongoCat.png");
+   background-image: url("media/BongoCat.png");
    background-position: right bottom; /*Positioning*/
    background-repeat: no-repeat; /*Prevent showing multiple background images*/
 
