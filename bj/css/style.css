@@ -338,7 +338,7 @@ visibility: hidden;
 	 background-image: url("../img/blackjack_background.jpg");
 	 color: yellow;
 	 top: 4%;
-	 right: 1%;
+	 right: 9%;
 	 position: absolute;
 	 transform: translate(5%);;
 	 
@@ -377,7 +377,30 @@ visibility: hidden;
 	
 	
 	
-	
+	#submit11 {  /* Knopf */
+	 padding: .5em;
+	 -moz-border-radius: 5px;
+	 -webkit-border-radius: 5px;
+	 border-radius: 6px;
+	 font-size: 20px;
+	 z-index: 1;
+	 font-family: verdana;
+	 text-decoration: none;
+	 width: 90px;
+	 border: 1px red solid;
+	 background-image: url("../img/blackjack_background.jpg");
+	 color: yellow;
+	 top: 4%;
+	 right: 1.5%;
+	 position: absolute;
+	 transform: translate(5%);
+	 
+	}
+	#submit11:hover {
+	 border: none;
+	 background: red;
+	 box-shadow: 0px 0px 1px #777;
+	}
 	
 	
 	

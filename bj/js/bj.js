@@ -522,3 +522,4 @@ if (document.getElementById("inputID").value != "") {
 
 } else {AufrufZumNameEingeben()}
 }
+
