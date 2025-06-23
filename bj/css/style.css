@@ -338,7 +338,7 @@ visibility: hidden;
 	 background-image: url("../img/blackjack_background.jpg");
 	 color: yellow;
 	 top: 4%;
-	 right: 9%;
+	 right: 120px;
 	 position: absolute;
 	 transform: translate(5%);;
 	 
@@ -391,7 +391,7 @@ visibility: hidden;
 	 background-image: url("../img/blackjack_background.jpg");
 	 color: yellow;
 	 top: 4%;
-	 right: 1.5%;
+	 right: 1%;
 	 position: absolute;
 	 transform: translate(5%);
 	 
