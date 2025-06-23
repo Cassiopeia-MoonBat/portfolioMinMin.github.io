@@ -8,9 +8,19 @@ h1{
 }
 
 body{
-    background-image: url("media/gaybird.jpg");
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-size: cover;
+    background-color: white;
+    /*  background-image: url("media/gaybird.jpg"); */
+	/*  background-repeat: no-repeat; */
+    /*  background-attachment: fixed; */
+	/*  background-size: cover; */
+
 }
 
+.background-img{
+
+    background:url('media/BongoCat.png');
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
