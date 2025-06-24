@@ -1,28 +1,31 @@
-h1{
-    color: blueviolet;
-    
-    outline-color: black;
-    outline-style: ridge;
-    text-align: center;
-    text-shadow: 10px;
+h1 {
+  color: blueviolet;
+
+  outline-color: black;
+  outline-style: ridge;
+  text-align: center;
+  text-shadow: 10px;
 }
 
 
-body{
-    
-    /*  background-image: url("media/gaybird.jpg"); 
+body {
+
+  /*  background-image: url("media/gaybird.jpg"); 
 	  background-repeat: no-repeat; 
       background-attachment: fixed;
 	  background-size: cover; 
     */
-    
-    
-    background-color: #ffff; /*Default bg, similar to the background's base color*/
-    background-position: right bottom; /*Positioning*/
-    background-repeat: no-repeat; /*Prevent showing multiple background images*/
-    background-image: url("media/BongoCat.png");
-    height: 100vh;
-    background-size: 30%;
+
+
+  background-color: #ffff;
+  /*Default bg, similar to the background's base color*/
+  background-position: right bottom;
+  /*Positioning*/
+  background-repeat: no-repeat;
+  /*Prevent showing multiple background images*/
+  background-image: url("media/BongoCat.png");
+  height: 100vh;
+  background-size: 30%;
 }
 
 .button {
@@ -40,7 +43,9 @@ body{
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: #5966c0;}
+.button:hover {
+  background-color: #5966c0;
+}
 
 .button:active {
   background-color: #6874C4;

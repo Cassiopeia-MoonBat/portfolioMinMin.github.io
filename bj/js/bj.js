@@ -62,26 +62,26 @@ var f = 1;
 //Alles zum Spielstand
 //var SpielstandAktiv = [prompt("Name:"), 100];
 //console.log(SpielstandAktiv);
-var Spielstaende = [["Hr. E",99]];
+var Spielstaende = [["Hr. E", 99]];
 var Punktestand = 0;
-var SpielstandAktiv = ["Test",0];
+var SpielstandAktiv = ["Test", 0];
 
 function NameBestaetigen() {
-	 SpielstandAktiv = [document.getElementById("inputID").value, 100];
+	SpielstandAktiv = [document.getElementById("inputID").value, 100];
 }
 
 function AufrufZumNameEingeben() {
 	document.getElementById("popup").style.visibility = "visible";
 	document.getElementById("popupText").innerHTML = "Geben Sie links ihr Name ein!";
-	
+
 }
 
 
 function SchonVorhanden() {
-	for (var i = 0; i<Spielstaende.length; i++) {
-//		console.log(Spielstaende)
-//		console.log(Spielstaende[i][0])
-//		console.log(SpielstandAktiv[0])
+	for (var i = 0; i < Spielstaende.length; i++) {
+		//		console.log(Spielstaende)
+		//		console.log(Spielstaende[i][0])
+		//		console.log(SpielstandAktiv[0])
 		if (Spielstaende[i][0] == SpielstandAktiv[0]) {
 			SpielstandAktiv = Spielstaende[i];
 			return true;
@@ -94,17 +94,17 @@ function SchonVorhanden() {
 }
 
 function LogIn() {
-		SchonVorhanden();
-		if (SchonVorhanden() !== true) {
-//			console.log("SpielstandAktiv");
-			Spielstaende.push(SpielstandAktiv);
+	SchonVorhanden();
+	if (SchonVorhanden() !== true) {
+		//			console.log("SpielstandAktiv");
+		Spielstaende.push(SpielstandAktiv);
 
-		}
-
-		Punktestand = SpielstandAktiv[1];
-//		console.log(SpielstandAktiv[1]);
 	}
-	// Ende Alles zum Spielstand
+
+	Punktestand = SpielstandAktiv[1];
+	//		console.log(SpielstandAktiv[1]);
+}
+// Ende Alles zum Spielstand
 
 
 
@@ -121,8 +121,8 @@ function popupWeg() {
 
 function KartenWert(a) {
 	var x = 0;
-	
-//	console.log(a);
+
+	//	console.log(a);
 	a.sort(sortFunction);
 	//console.log(a);
 
@@ -247,11 +247,11 @@ function KarteAusteilen(a, b) {
 }
 
 function PunktestandAnzeigen() {
-//	console.log(Spielstaende);
+	//	console.log(Spielstaende);
 	//Spielstaende[ SpielstandAktiv[1] ] = Punktestand;
 	SpielstandAktiv[1] = Punktestand;
-//	console.log(Spielstaende);
-//	document.getElementById("punktestand").innerHTML = Spielstaende;
+	//	console.log(Spielstaende);
+	//	document.getElementById("punktestand").innerHTML = Spielstaende;
 
 	Spielstaende.sort(sortFunction);
 
@@ -262,16 +262,16 @@ function PunktestandAnzeigen() {
 			return (d[1] < e[1]) ? 1 : -1;
 		}
 	}
-	
-	
+
+
 	var html = "";
-	for(i=0; i<Spielstaende.length; i++) {
-		html += "<p>"+Spielstaende[i][0] + ": " + Spielstaende[i][1] +"</p>";
+	for (i = 0; i < Spielstaende.length; i++) {
+		html += "<p>" + Spielstaende[i][0] + ": " + Spielstaende[i][1] + "</p>";
 	}
-//	console.log("marker"+Spielstaende);
+	//	console.log("marker"+Spielstaende);
 	document.getElementById("punktestand").innerHTML = html;
-//	console.log(html);
-	
+	//	console.log(html);
+
 }
 
 //PunktestandAnzeigen();
@@ -310,7 +310,7 @@ function verloren() {
 
 	for (var i = 0; i < DealerKarten.length; i++) {
 		if (document.getElementById(DealerKarten[i][0]).getAttribute("src") == "Stapel/Ktbk.png") {
-			document.getElementById(DealerKarten[i][0]).setAttribute("src", "Stapel/"+DealerKarten[i][0] + ".png")
+			document.getElementById(DealerKarten[i][0]).setAttribute("src", "Stapel/" + DealerKarten[i][0] + ".png")
 		}
 
 		/*
@@ -446,80 +446,80 @@ Kartenhaufen();
 
 
 function Start() {
-	
-NameBestaetigen();
 
-if (document.getElementById("inputID").value != "") {
-	
-	//Spiel beginnt, Delaer und Spieler erhalten zwei Karten.
+	NameBestaetigen();
 
-	
-	LogIn();
+	if (document.getElementById("inputID").value != "") {
 
-	Punktestand = Punktestand - 1;
-	PunktestandAnzeigen();
-
-	document.getElementById("submit").style.visibility = "hidden";
-	document.getElementById("Wertsk").style.visibility = "visible";
-
-	KarteAusteilen(SpielerKarten, "sk");
-	KarteAusteilen(DealerKarten, "dk");
-	KarteAusteilen(SpielerKarten, "sk");
-	KarteAusteilen(DealerKarten, "dk");
-
-	document.getElementById(DealerKarten[1][0]).setAttribute("src", "Stapel/Ktbk.png");
-
-	if (KartenWert(DealerKarten) < 21 && KartenWert(SpielerKarten) < 21) {
-		//Spiel geht wie gehabt weiter, da niemand Blackjack hat.
-		document.getElementById("popupText").innerHTML = "Spieler hat " + KartenWert(SpielerKarten) + ", Spieler ist an der Reihe.";
-		document.getElementById("popup").style.visibility = "visible";
-
-		changeFunktion("submit3", "showHitStand()");
+		//Spiel beginnt, Delaer und Spieler erhalten zwei Karten.
 
 
+		LogIn();
 
-	} else {
-		//Dealer oder/und Spieler hat Blackjack, prüfe wer Blackjack hat:
-		if (KartenWert(DealerKarten) == 21 && KartenWert(SpielerKarten) < 21) {
-			//Dealer hat Blackjack, Spieler verliert.
-			PunktestandAnzeigen();
+		Punktestand = Punktestand - 1;
+		PunktestandAnzeigen();
 
-			verloren();
+		document.getElementById("submit").style.visibility = "hidden";
+		document.getElementById("Wertsk").style.visibility = "visible";
 
-			document.getElementById("popupText").innerHTML = "Dealer hat Blackjack, Spieler verliert. Runde beendet.";
+		KarteAusteilen(SpielerKarten, "sk");
+		KarteAusteilen(DealerKarten, "dk");
+		KarteAusteilen(SpielerKarten, "sk");
+		KarteAusteilen(DealerKarten, "dk");
 
-			changeFunktion("submit3", "reStart()");
+		document.getElementById(DealerKarten[1][0]).setAttribute("src", "Stapel/Ktbk.png");
+
+		if (KartenWert(DealerKarten) < 21 && KartenWert(SpielerKarten) < 21) {
+			//Spiel geht wie gehabt weiter, da niemand Blackjack hat.
+			document.getElementById("popupText").innerHTML = "Spieler hat " + KartenWert(SpielerKarten) + ", Spieler ist an der Reihe.";
+			document.getElementById("popup").style.visibility = "visible";
+
+			changeFunktion("submit3", "showHitStand()");
+
+
+
+		} else {
+			//Dealer oder/und Spieler hat Blackjack, prüfe wer Blackjack hat:
+			if (KartenWert(DealerKarten) == 21 && KartenWert(SpielerKarten) < 21) {
+				//Dealer hat Blackjack, Spieler verliert.
+				PunktestandAnzeigen();
+
+				verloren();
+
+				document.getElementById("popupText").innerHTML = "Dealer hat Blackjack, Spieler verliert. Runde beendet.";
+
+				changeFunktion("submit3", "reStart()");
+
+			}
+
+			if (KartenWert(SpielerKarten) == 21 && KartenWert(DealerKarten) < 21) {
+				//Spieler hat Blackjack, Spieler gewinnt.
+				Punktestand = Punktestand + 2.5;
+				PunktestandAnzeigen();
+
+				verloren();
+
+				document.getElementById("popupText").innerHTML = "Spieler hat Blackjack, Spieler gewinnt. Runde beendet.";
+
+				changeFunktion("submit3", "reStart()");
+
+			}
+
+			if (KartenWert(SpielerKarten) == 21 && KartenWert(DealerKarten) == 21) {
+				//Dealer und Spieler haben Blackjack, Unentschieden.
+				Punktestand = Punktestand + 1;
+				PunktestandAnzeigen();
+
+				verloren();
+
+				document.getElementById("popupText").innerHTML = "Spieler und Dealer haben Black Jack, Keine Gewinner. Runde beendet.";
+
+				changeFunktion("submit3", "reStart()");
+
+			}
 
 		}
 
-		if (KartenWert(SpielerKarten) == 21 && KartenWert(DealerKarten) < 21) {
-			//Spieler hat Blackjack, Spieler gewinnt.
-			Punktestand = Punktestand + 2.5;
-			PunktestandAnzeigen();
-
-			verloren();
-
-			document.getElementById("popupText").innerHTML = "Spieler hat Blackjack, Spieler gewinnt. Runde beendet.";
-
-			changeFunktion("submit3", "reStart()");
-
-		}
-
-		if (KartenWert(SpielerKarten) == 21 && KartenWert(DealerKarten) == 21) {
-			//Dealer und Spieler haben Blackjack, Unentschieden.
-			Punktestand = Punktestand + 1;
-			PunktestandAnzeigen();
-
-			verloren();
-
-			document.getElementById("popupText").innerHTML = "Spieler und Dealer haben Black Jack, Keine Gewinner. Runde beendet.";
-
-			changeFunktion("submit3", "reStart()");
-
-		}
-
-	}
-
-} else {AufrufZumNameEingeben()}
+	} else { AufrufZumNameEingeben() }
 }
 
