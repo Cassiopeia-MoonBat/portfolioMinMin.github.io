@@ -87,3 +87,7 @@ body {
 #rollButton:hover {
   background-color: #5966c0;
 }
+
+#d20 {
+  scale: 40%;
+}
