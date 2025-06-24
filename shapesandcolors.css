@@ -54,3 +54,36 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.container {
+
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+
+}
+
+.dice {
+  font-size: 100px;
+  margin: 20px 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+#rollButton {
+  background-color: #6874C4;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color o.3s;
+}
+
+#rollButton:hover {
+  background-color: #5966c0;
+}
