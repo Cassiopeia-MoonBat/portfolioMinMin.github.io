@@ -67,27 +67,33 @@ body {
 
 }
 
+.image {
+  width: 200px;
+  height: 200px;
+}
+
 .dice {
   font-size: 100px;
   margin: 20px 0;
   transition: transform 0.2s ease-in-out;
+  position: absolute;
 }
 
-#rollButton {
-  background-color: #6874C4;
+ #rollButton {
+  /* background-color: #6874C4;
   color: white;
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 10px 20px; */
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
   transition: background-color o.3s;
 }
 
-#rollButton:hover {
+/* #rollButton:hover {
   background-color: #5966c0;
-}
+}  */
 
 #d20 {
-  scale: 40%;
+  /* scale: 40%; */
 }
