@@ -7,6 +7,9 @@ h1 {
   text-shadow: 10px;
 }
 
+h4 {
+  text-decoration: underline;
+}
 
 body {
 
@@ -55,14 +58,14 @@ body {
   transform: translateY(4px);
 }
 
-.container {
+#container {
 
   text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   display: flex;
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 0;
 
 }
@@ -79,7 +82,7 @@ body {
   position: absolute;
 }
 
- #rollButton {
+#rollButton {
   /* background-color: #6874C4;
   color: white;
   font-size: 18px;
@@ -94,6 +97,41 @@ body {
   background-color: #5966c0;
 }  */
 
-#d20 {
-  /* scale: 40%; */
+/* #d20 { */
+/* scale: 40%; */
+/* } */
+
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: footer;
+}
+
+.main {
+  text-align: left;
+  grid-area: main;
+}
+
+.right {
+  grid-area: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . right"
+    "main main . right "
+    "footer footer . .";
+}
+
+div.grid-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
