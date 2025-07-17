@@ -1,3 +1,23 @@
+
+
+window.addEventListener("load", ready)
+
+
+function ready() {
+    fetch("visitcounter.txt")
+        .then((res) => res.text())
+        .then((text) => { 
+            var currentCount = Number(text); 
+            currentCount = currentCount + 1;
+            text = String(currentCount);
+            console.log(text);
+
+        })
+        .catch((e) => console.error(e));
+}
+
+
+
 function buttonwork() {
     window.location.href = "bj/index.html";
 }
@@ -30,3 +50,4 @@ const rollDice = () => {
 //     return faces[number];
 
 // }
+
