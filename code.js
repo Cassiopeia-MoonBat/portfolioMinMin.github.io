@@ -22,6 +22,9 @@ function buttonwork() {
     window.location.href = "bj/index.html";
 }
 
+function buttonItch() {
+    window.location.href = "https://minaluna.itch.io/thosewhoremained";
+}
 
 const dice = document.getElementById("d20");
 const rollButton = document.getElementById("rollButton");
