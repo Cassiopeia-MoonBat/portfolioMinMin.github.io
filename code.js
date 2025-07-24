@@ -22,8 +22,8 @@ function buttonwork() {
     window.location.href = "bj/index.html";
 }
 
-function buttonworkItch() {
-    window.location.href = "https://minaluna.itch.io/thosewhoremained";
+function buttonItch() {
+    window.location = "https://minaluna.itch.io/thosewhoremained";
 }
 
 const dice = document.getElementById("d20");
