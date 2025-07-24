@@ -22,7 +22,7 @@ function buttonwork() {
     window.location.href = "bj/index.html";
 }
 
-function buttonItch() {
+function buttonworkItch() {
     window.location.href = "https://minaluna.itch.io/thosewhoremained";
 }
 
