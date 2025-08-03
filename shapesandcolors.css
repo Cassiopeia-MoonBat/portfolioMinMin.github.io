@@ -112,6 +112,7 @@ body {
 .main {
   text-align: left;
   grid-area: main;
+  font-size: 1em;
 }
 
 .right {
