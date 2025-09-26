@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-
-
-<html>
-
+<html lang="en">
 <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="shapesandcolors.css">
-    <link rel="icon" type="image/x-icon" href="media/squish.ico">
-    <script src="code.js" defer></script>
-    <title>Moonbat portfolio</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of MinMin - Showcasing creative projects and development work">
+<title>MinMin | Portfolio</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+<header>
+<nav class="navbar">
+<h1 class="logo">MinMin</h1>
+<button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-    
-    <div class="grid-container" id="layout">
-        <div class="header"><h1>Welcome to my Portfolio</h1></div>
-        <div class="main">
-            <h4>About Me:</h4>
-            Hi, my name is Mina Luna Cassiopeia / みな or short just Moon.
-            This here is going to become a portfolio of all my work, starting from 2025 with creation made during my
-            time at the Hochschule Furtwangen University in the course: "Games and immersive media".
 
-            I am happy to announce that "Those Who Remained", was showcased at the Gamescom 2025 
-            as part of the <a href="https://rawtalentbooth.com/">RAW Talent Booth</a>( Indie Area, Hall 10.2, D42-44)
-            This website is currently under construction. 
-            </div>
+<main>
+<!-- About Section -->
+<section id="about" class="section about">
+<h2>About Me</h2>
+<p>
+Hi, my name is Mina. I’m a creative developer passionate about interactive media,
+games, and storytelling. One of my projects was even showcased at Gamescom 2025!
+</p>
+</section>
 
-        <div class="right">
-            <h4> To my Projects:</h4>
-            <button class="button" onclick="buttonwork()">Blackjack</button>
-            <button class="button" onclick="buttonItch()">Those Who Remained</button>
-            </div>
-        
 
-        <div class="menu" id="container">
-            <div id="dice" class="dice"><button id="rollButton"><img width="200" height="200" src="d20/D20_20.png"
-                        id="d20" ;></button></div>
+<!-- Projects Section -->
+<section id="projects" class="section projects">
+<h2>Projects</h2>
+<div class="project-grid">
+<div class="project-card">
+<img src="" alt="Blackjack game screenshot">
+<h3>Blackjack</h3>
+<p>A card game implementation with focus on UI/UX and clean game logic.</p>
+<button onclick="buttonwork()">View Project</button>
+</div>
+<div class="project-card">
+<img src="thosewhoremained.png" alt="Those Who Remained screenshot">
+<h3>Those Who Remained</h3>
+<p>A narrative-driven experience exploring atmosphere and immersion.</p>
+<button onclick="buttonItch()">View Project</button>
+</div>
+</div>
+</section>
 
-        </div>
 
-    </div>
+<!-- Dice Roller Section -->
+<section id="dice" class="section dice">
+<h2>D20 Dice Roller</h2>
+<img id="d20" src="assets/d20/D20_20.png" alt="D20 dice">
+<button id="rollButton">Roll Dice</button>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+<h2>Contact</h2>
+<p>Let’s connect! You can reach me via:</p>
+<ul>
+<!--<li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li> -->
+<li>GitHub: <a href="https://github.com/Cassiopeia-MoonBat" target="_blank">@Cassiopeia-MoonBat</a></li>
+<!--<li>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></li> -->
+</ul>
+</section>
+</main>
+
+
+<footer>
+<!--<p>&copy; 2025 MinMin. All rights reserved.</p>-->
+</footer>
+
+
+<script src="assets/js/code.js"></script>
 </body>
-
 </html>
