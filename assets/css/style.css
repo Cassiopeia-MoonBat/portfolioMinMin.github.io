@@ -1,0 +1,245 @@
+/* Merged CSS: Cleaned and unified */
+
+:root {
+  --primary: #4a90e2;
+  --secondary: #f5f7fa;
+  --accent: #ff6b6b;
+  --text: #333;
+  --background: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background-color: var(--secondary);
+  line-height: 1.6;
+  padding: 3rem;
+  background-image: url("media/BongoCat.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 30%;
+  height: 100vh;
+}
+
+h1 {
+  color: blueviolet;
+  outline-color: black;
+  outline-style: ridge;
+  text-align: center;
+  text-shadow: 2em;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0.75rem;
+  font-size: 1.25rem;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--background);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-card.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.project-card p {
+  padding: 0 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 3vmin;
+  font-size: 0.5em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #6874C4;
+  border: none;
+  border-radius: 15vmin;
+  box-shadow: 0 9px #999;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #5966c0;
+}
+
+.button:active {
+  background-color: #6874C4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+  margin: 1rem;
+}
+
+.dice {
+  font-size: 20px;
+  margin: 1vmin 0;
+  transition: transform 0.2s ease-in-out;
+  position: absolute;
+}
+
+#rollButton {
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: var(--primary);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Grid layout from old CSS */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . right"
+    "main main . right"
+    "footer footer . .";
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1vmin 0;
+  font-size: 1.5em;
+}
+
+.header { grid-area: header; }
+.main { grid-area: main; text-align: left; }
+.right { grid-area: right; }
+.menu { grid-area: footer; }
