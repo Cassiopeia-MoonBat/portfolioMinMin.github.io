@@ -25,7 +25,7 @@ console.log(text);
 // Button Navigation
 // ----------------------
 function buttonwork() {
-window.location.href = "../bj/index.html";
+window.location.href = "assets/bj/index.html";
 }
 
 
@@ -41,13 +41,14 @@ const dice = document.getElementById("d20");
 const rollButton = document.getElementById("rollButton");
 
 
-rollButton.addEventListener("click", rollDice);
-
-
 const rollDice = () => {
 const randomNumber = Math.floor(Math.random() * 20) + 1;
-dice.src = `../d20/D20_${randomNumber}.png`;
+dice.src = `assets/d20/D20_${randomNumber}.png`;
 };
+
+
+rollButton.addEventListener("click", rollDice);
+
 
 
 /* Optional: previous implementation for dice faces
