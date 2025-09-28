@@ -1,7 +1,7 @@
 /* Merged CSS: Cleaned and unified */
 
 :root {
-  --primary: #4a90e2;
+  --primary: #ffa68b;
   --secondary: #f5f7fa;
   --accent: #ff6b6b;
   --text: #333;
@@ -20,7 +20,7 @@ body {
   background-color: var(--secondary);
   line-height: 1.6;
   padding: 3rem;
-  background-image: url("media/BongoCat.png");
+  background-image: url("../media/BongoCat.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 30%;
@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-  color: blueviolet;
+  color: #870146;
   outline-color: black;
   outline-style: ridge;
   text-align: center;
