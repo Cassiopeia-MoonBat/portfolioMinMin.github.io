@@ -37,6 +37,7 @@ window.location.href = "https://minaluna.itch.io/thosewhoremained";
 // ----------------------
 // Dice Roll
 // ----------------------
+/* 
 const dice = document.getElementById("d20");
 const rollButton = document.getElementById("rollButton");
 
@@ -48,14 +49,6 @@ dice.src = `assets/d20/D20_${randomNumber}.png`;
 
 
 rollButton.addEventListener("click", rollDice);
-
-
-
-/* Optional: previous implementation for dice faces
-const getDiceFace = (number) => {
-const faces = ["D20","D201","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
-return faces[number];
-};
 */
 
 
