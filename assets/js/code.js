@@ -33,6 +33,10 @@ function buttonItch() {
 window.location.href = "https://minaluna.itch.io/thosewhoremained";
 }
 
+function buttonFace() {
+window.location.href = "https://globalgamejam.org/games/2026/faceless-cultivation-5";
+}
+
 
 // ----------------------
 // Dice Roll
