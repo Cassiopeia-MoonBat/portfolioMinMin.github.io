@@ -25,7 +25,7 @@ console.log(text);
 // Button Navigation
 // ----------------------
 function buttonwork() {
-window.location.href = "assets/bj/index.html";
+window.location.href = "project1.html";
 }
 
 
@@ -41,7 +41,7 @@ window.location.href = "https://globalgamejam.org/games/2026/faceless-cultivatio
 // ----------------------
 // Dice Roll
 // ----------------------
-/* 
+/*
 const dice = document.getElementById("d20");
 const rollButton = document.getElementById("rollButton");
 
@@ -54,7 +54,6 @@ dice.src = `assets/d20/D20_${randomNumber}.png`;
 
 rollButton.addEventListener("click", rollDice);
 */
-
 
 // ----------------------
 // Smooth Scrolling for Navigation Links
