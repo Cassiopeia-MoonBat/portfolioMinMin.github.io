@@ -98,3 +98,10 @@ File: documentation.md
 What changed:
 - Removed the blackjack-specific stylesheet section from `documentation.md`.
 - Kept the documentation focused on the portfolio website code only.
+
+### 7. Increased banner image display height
+File: code/css/style.css
+
+What changed:
+- Increased the `.site-banner img` height from `280px` to `420px` to show more of the banner artwork.
+- Added `object-position: center center` to better center the image content inside the banner.

@@ -14,17 +14,17 @@ window.addEventListener("load", ready);
  * See docs: ./documentation.md#js-function-ready
  */
 function ready() {
-    
-// fetch("visitcounter.txt")
-// .then(res => res.text())
-// .then(text => {
-// let currentCount = Number(text);
-// currentCount += 1;
-// text = String(currentCount);
-// console.log(text);
-// })
-// .catch(e => console.error(e));
- }
+
+    // fetch("visitcounter.txt")
+    // .then(res => res.text())
+    // .then(text => {
+    // let currentCount = Number(text);
+    // currentCount += 1;
+    // text = String(currentCount);
+    // console.log(text);
+    // })
+    // .catch(e => console.error(e));
+}
 
 
 // ----------------------
@@ -34,56 +34,51 @@ function ready() {
  * Redirects the user to the first project page.
  * Docs: ./documentation.md#js-function-buttonwork
  */
+/**
 function buttonwork() {
 window.location.href = "project1.html";
 }
+*/
 
-
-/**
- * Redirects the user to the Itch.io page for "Those Who Remained".
- * Docs: ./documentation.md#js-function-buttonitch
- */
-function buttonItch() {
-window.location.href = "https://minaluna.itch.io/thosewhoremained";
+function buttonThoseWhoRemained() {
+    window.location.href = "./project_pages/ThoseWhoRemained.html";
 }
-
-/**
- * Redirects the user to the Global Game Jam page for "Faceless Cultivation." 
- * Docs: ./documentation.md#js-function-buttonface
- */
-function buttonFace() {
-window.location.href = "https://globalgamejam.org/games/2026/faceless-cultivation-5";
+function buttonFacelessCultivation() {
+    window.location.href = "./project_pages/FacelessCultivation.html";
 }
-
-
+function buttonABoxFullOfCats() {
+    window.location.href = "./project_pages/ABoxFullOfCats.html";
+}
+function buttonPrimordialMass() {
+    window.location.href = "./project_pages/PrimordialMass.html";
+}
+function buttonHushDarling() {
+    window.location.href = "./project_pages/HushDarling.html";
+}
 // ----------------------
 // Dice Roll
 // Docs: ./documentation.md#js-commented-dice-roll
 // ----------------------
 /*
+
 const dice = document.getElementById("d20");
 const rollButton = document.getElementById("rollButton");
-
-
 const rollDice = () => {
 const randomNumber = Math.floor(Math.random() * 20) + 1;
 dice.src = `assets/d20/D20_${randomNumber}.png`;
 };
-
-
 rollButton.addEventListener("click", rollDice);
 */
-
-// ----------------------
+// ---------------------
 // Smooth Scrolling for Navigation Links
 // ----------------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', e => {
-e.preventDefault();
-document.querySelector(anchor.getAttribute('href')).scrollIntoView({
-behavior: 'smooth'
-});
-});
+    anchor.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
 
@@ -95,19 +90,19 @@ const navLinks = document.querySelector('.nav-links');
 
 
 if (menuToggle) {
-menuToggle.addEventListener('click', () => {
-navLinks.classList.toggle('active');
-menuToggle.classList.toggle('open');
-});
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
 }
 
 
 // Close mobile menu when a link is clicked
 navLinks.querySelectorAll('a').forEach(link => {
-link.addEventListener('click', () => {
-navLinks.classList.remove('active');
-menuToggle.classList.remove('open');
-});
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('open');
+    });
 });
 
 
@@ -121,13 +116,12 @@ const observerOptions = { threshold: 0.1 };
 
 
 const observer = new IntersectionObserver((entries, observer) => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('visible');
-observer.unobserve(entry.target);
-}
-});
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
 }, observerOptions);
-
 
 projectCards.forEach(card => observer.observe(card));

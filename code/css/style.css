@@ -76,8 +76,9 @@ header {
 
 .site-banner img {
   width: 100%;
-  height: 280px;
+  height: 420px; /* increased to show more of the banner artwork */
   object-fit: cover;
+  object-position: center center;
   display: block;
 }
 
