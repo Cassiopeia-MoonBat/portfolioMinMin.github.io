@@ -105,3 +105,24 @@ File: code/css/style.css
 What changed:
 - Increased the `.site-banner img` height from `280px` to `420px` to show more of the banner artwork.
 - Added `object-position: center center` to better center the image content inside the banner.
+
+### 8. Contact section: added icon links
+File: index.html, code/css/style.css
+
+What changed:
+- Replaced plain text links in the Contact section with icon-based links for LinkedIn, Linktree, Email, and Instagram.
+- Preserved existing Linktree and email addresses; added placeholder LinkedIn and Instagram URLs to update.
+- Added CSS rules for `.contact-list`, `.contact-link`, `.icon`, and `.contact-text` to style the new links.
+
+### 9. Instagram icon: custom gradient SVG
+File: index.html
+
+What changed:
+- Replaced the generic Instagram SVG with a custom gradient SVG that matches the provided design (rounded square, inner ring, and small dot).  
+- Gradient stops use `#feda75`, `#d62976`, and `#962fbf` to approximate Instagram's color palette.
+
+### 10. Removed Instagram link from Contact section
+File: index.html
+
+What changed:
+- Removed the Instagram icon/link from the Contact section at the user's request.
