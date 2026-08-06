@@ -126,3 +126,27 @@ File: index.html
 
 What changed:
 - Removed the Instagram icon/link from the Contact section at the user's request.
+
+### 11. Added project page HTML template
+File: project_pages/project_template.html
+
+What changed:
+- Created a reusable template page for project detail pages.
+- Updated the template to match the portfolio theme with the same dark gradient hero, rounded cards, and accent styling.
+- Added a large hero image area, project title and tagline, description block, screenshot gallery, and link list.
+- Included buttons for returning to the portfolio and for a custom back action handled by user JavaScript.
+### 12. Applied project page template to all project pages
+File: project_pages/*.html
+
+What changed:
+- Copied the new project page structure into all existing project pages under project_pages.
+- Standardized hero, description, screenshots, and a single portfolio button across each page.
+
+### 13. Outsourced project page styles to projectpage.css
+File: code/css/projectpage.css, project_pages/*.html
+
+What changed:
+- Created code/css/projectpage.css for project page-specific styles.
+- Removed inline <style> blocks from all project pages and project_template.html.
+- Added a second stylesheet link to each project page so it loads both global and project-specific styles.
+
