@@ -1,17 +1,21 @@
-:root {
+﻿:root {
   /* Project page-specific styles are separated into projectpage.css.
      Global palette and typography remain in style.css. */
 }
 
 body {
   background-color: var(--secondary);
-  padding: 3rem 1rem 4rem;
+  margin: 0;
+  padding: 0;
 }
 
 .project-page {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 3rem 1rem 4rem;
 }
+
+
 
 .project-header {
   display: grid;
@@ -192,3 +196,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+

@@ -150,3 +150,19 @@ What changed:
 - Removed inline <style> blocks from all project pages and project_template.html.
 - Added a second stylesheet link to each project page so it loads both global and project-specific styles.
 
+### 14. Added index-style header and full-width footer to project pages
+File: project_pages/*.html, code/css/projectpage.css
+
+What changed:
+- Added the same site-header and banner structure from index.html to all project pages.
+- Added the same footer content from index.html.
+- Updated code/css/projectpage.css so project page content is padded inside .project-page while the footer can span the full page width.
+
+### 14. Added index-style header and full-width footer to project pages
+File: project_pages/*.html, code/css/projectpage.css
+
+What changed:
+- Added the same site header and banner structure from index.html to all project pages.
+- Added the same footer content from index.html to all project pages.
+- Updated code/css/projectpage.css so project page padding is applied inside .project-page and the footer can span the full browser width.
+
