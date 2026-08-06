@@ -84,3 +84,17 @@ File: index.html
 What changed:
 - Replaced the temporary SVG banner with an image from the media folder:
   assets/media/MinaMooncat/Mooncat.png
+
+### 5. Added a documentation file
+File: documentation.md
+
+What changed:
+- Created a documentation file that explains every JavaScript function in `code/js/code.js`.
+- Documented every CSS section and selector in `code/css/style.css`.
+
+### 6. Removed unrelated stylesheet content from the documentation
+File: documentation.md
+
+What changed:
+- Removed the blackjack-specific stylesheet section from `documentation.md`.
+- Kept the documentation focused on the portfolio website code only.

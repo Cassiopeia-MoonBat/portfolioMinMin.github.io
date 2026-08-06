@@ -1,5 +1,5 @@
 /* Merged CSS: Cleaned and unified */
-
+/* Docs: ../documentation.md#css-root-variables */
 :root {
   --primary: #214a61;
   --secondary: #eef4f7;
@@ -13,7 +13,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Docs: ../documentation.md#css-global-reset */
 
+/* Docs: ../documentation.md#css-body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
@@ -27,6 +29,7 @@ body {
   height: 100vh;
 }
 
+/* Docs: ../documentation.md#css-headings */
 h1 {
   color: #5d7d96;
   outline-color: black;
@@ -50,10 +53,12 @@ h4 {
   text-decoration: underline;
 }
 
+/* Docs: ../documentation.md#css-header-siteheader */
 header {
   color: #fff;
 }
 
+/* Docs: ../documentation.md#css-header-siteheader */
 .site-header {
   background: linear-gradient(135deg, #18364a 0%, #2d5c74 45%, #477996 100%);
   padding: 1rem 2rem 2rem;
@@ -76,6 +81,7 @@ header {
   display: block;
 }
 
+/* Docs: ../documentation.md#css-banner-overlay */
 .banner-overlay {
   position: absolute;
   inset: 0;
@@ -99,6 +105,7 @@ header {
   box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
+/* Docs: ../documentation.md#css-banner-title */
 .banner-title {
   text-align: right;
   align-self: center;
@@ -126,6 +133,7 @@ header {
   letter-spacing: 0.08em;
 }
 
+/* Docs: ../documentation.md#css-role-card */
 .role-card p {
   margin: 0.2rem 0;
   font-size: 0.95rem;
@@ -146,6 +154,7 @@ header {
   position: relative;
 }
 
+/* Docs: ../documentation.md#css-navbar */
 .logo {
   font-size: 1.75rem;
   font-weight: bold;
@@ -168,6 +177,7 @@ header {
   color: var(--accent);
 }
 
+/* Docs: ../documentation.md#css-menu-toggle */
 .menu-toggle {
   display: none;
   background: none;
@@ -178,6 +188,7 @@ header {
   z-index: 1001;
 }
 
+/* Docs: ../documentation.md#css-section */
 .section {
   padding: 2rem 2rem 1rem;
   max-width: 1100px;
@@ -192,6 +203,7 @@ header {
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
+/* Docs: ../documentation.md#css-collapsible-section */
 .collapsible-section summary {
   display: flex;
   align-items: center;
@@ -297,6 +309,7 @@ header {
   justify-content: space-between;
 }
 
+/* Docs: ../documentation.md#css-button */
 .button {
   display: inline-block;
   padding: 3vmin;
@@ -313,6 +326,7 @@ header {
   margin-top: 1rem;
 }
 
+/* Docs: ../documentation.md#css-button */
 .button:hover {
   background-color: #5966c0;
 }
@@ -324,6 +338,7 @@ header {
 }
 
 
+/* Docs: ../documentation.md#css-container */
 #container {
   text-align: center;
   display: flex;
@@ -334,6 +349,7 @@ header {
   margin: 1rem;
 }
 
+/* Docs: ../documentation.md#css-dice */
 .dice {
   font-size: 20px;
   margin: 1vmin 0;
@@ -341,12 +357,14 @@ header {
   position: absolute;
 }
 
+/* Docs: ../documentation.md#css-rollbutton */
 #rollButton {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
+/* Docs: ../documentation.md#css-footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -384,6 +402,8 @@ footer {
   }
 }
 
+/* Docs: ../documentation.md#css-responsive-navigation */
+/* Docs: ../documentation.md#css-grid-container */
 /* Grid layout from old CSS */
 .grid-container {
   display: grid;

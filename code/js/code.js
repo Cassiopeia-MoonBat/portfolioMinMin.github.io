@@ -5,9 +5,14 @@
 // ----------------------
 // Visit Counter
 // ----------------------
+// Docs: ./documentation.md#js-load-ready
 window.addEventListener("load", ready);
 
 
+/**
+ * Ready handler for page load.
+ * See docs: ./documentation.md#js-function-ready
+ */
 function ready() {
     
 // fetch("visitcounter.txt")
@@ -19,21 +24,33 @@ function ready() {
 // console.log(text);
 // })
 // .catch(e => console.error(e));
-// }
+ }
 
 
 // ----------------------
 // Button Navigation
 // ----------------------
+/**
+ * Redirects the user to the first project page.
+ * Docs: ./documentation.md#js-function-buttonwork
+ */
 function buttonwork() {
 window.location.href = "project1.html";
 }
 
 
+/**
+ * Redirects the user to the Itch.io page for "Those Who Remained".
+ * Docs: ./documentation.md#js-function-buttonitch
+ */
 function buttonItch() {
 window.location.href = "https://minaluna.itch.io/thosewhoremained";
 }
 
+/**
+ * Redirects the user to the Global Game Jam page for "Faceless Cultivation." 
+ * Docs: ./documentation.md#js-function-buttonface
+ */
 function buttonFace() {
 window.location.href = "https://globalgamejam.org/games/2026/faceless-cultivation-5";
 }
@@ -41,6 +58,7 @@ window.location.href = "https://globalgamejam.org/games/2026/faceless-cultivatio
 
 // ----------------------
 // Dice Roll
+// Docs: ./documentation.md#js-commented-dice-roll
 // ----------------------
 /*
 const dice = document.getElementById("d20");
