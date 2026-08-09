@@ -53,7 +53,7 @@ function buttonPrimordialMass() {
     window.location.href = "./project_pages/primordialmass.html";
 }
 function buttonHushDarling() {
-    window.location.href = "./project_pages/hushdarling.html";
+    window.location.href = "./project_pages/HushDarling.html";
 }
 // ----------------------
 // Dice Roll
