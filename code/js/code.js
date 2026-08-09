@@ -41,19 +41,19 @@ window.location.href = "project1.html";
 */
 
 function buttonThoseWhoRemained() {
-    window.location.href = "./project_pages/ThoseWhoRemained.html";
+    window.location.href = "./project_pages/thosewhoremained.html";
 }
 function buttonFacelessCultivation() {
-    window.location.href = "./project_pages/FacelessCultivation.html";
+    window.location.href = "./project_pages/facelesscultivation.html";
 }
 function buttonABoxFullOfCats() {
-    window.location.href = "./project_pages/ABoxFullOfCats.html";
+    window.location.href = "./project_pages/aboxfullofcats.html";
 }
 function buttonPrimordialMass() {
-    window.location.href = "./project_pages/PrimordialMass.html";
+    window.location.href = "./project_pages/primordialmass.html";
 }
 function buttonHushDarling() {
-    window.location.href = "./project_pages/HushDarling.html";
+    window.location.href = "./project_pages/hushdarling.html";
 }
 // ----------------------
 // Dice Roll
