@@ -286,6 +286,23 @@ header {
   height: 100%;
 }
 
+.project-grid > button {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  overflow: hidden;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-grid > button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .project-card.visible {
   transform: translateY(0);
   opacity: 1;

@@ -32,10 +32,13 @@ body {
 }
 
 .project-hero img {
-  width: 100%;
+  width: calc(100% + 4rem);
+  height: auto;
+  min-height: 240px;
   max-height: 420px;
   object-fit: cover;
-  border-radius: 18px;
+  margin: -2rem -2rem 0;
+  border-radius: 24px 24px 0 0;
   border: 1px solid rgba(255,255,255,0.14);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }

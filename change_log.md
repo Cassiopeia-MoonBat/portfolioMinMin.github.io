@@ -189,6 +189,26 @@ What changed:
 - Converted the project document section to the same collapsible design as the main portfolio page.
 - Kept the existing embedded PDF and local asset path unchanged.
 
+## 2026-08-21 — Rounded project card buttons
+
+### Project card outline
+File: code/css/style.css
+
+What changed:
+- Removed the browser-default button border and padding around project cards.
+- Matched the button wrapper's 12px border radius to the project cards.
+- Added a visible keyboard focus outline for accessible card navigation.
+
+## 2026-08-21 — Full-width project hero images
+
+### Hero image sizing
+File: code/css/projectpage.css
+
+What changed:
+- Extended project hero images across the hero panel padding so the blue background no longer appears beside them.
+- Added intrinsic image sizing with a 240px minimum and 420px maximum height for a consistent hero layout.
+- Rounded only the top image corners to follow the outer hero panel shape.
+
 - Files changed:
   - `code/js/code.js` — added guards so the mobile menu toggle only runs when both the toggle button and `.nav-links` exist, preventing a runtime error that blocked the hamburger from opening.
   - `code/css/style.css` — adjusted stacking context: added `z-index: 1` to `.site-banner` and `z-index: 1100` to `.navbar` so the navigation and hamburger menu render above the banner image and remain clickable.
