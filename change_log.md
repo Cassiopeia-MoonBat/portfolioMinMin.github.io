@@ -159,6 +159,36 @@ What changed:
 - Updated code/css/projectpage.css so project page content is padded inside .project-page while the footer can span the full page width.
 ## 2026-08-21 — Mobile menu / banner stacking fix
 
+## 2026-08-21 — Primordial Mass media viewers
+
+### Trailer video
+File: project_pages/primordialmass.html, code/css/projectpage.css
+
+What changed:
+- Added an HTML5 video player to the Primordial Mass project page.
+- Made the trailer player collapsible with the same details/summary design used by the main portfolio page.
+- Added controls, metadata preloading, and the existing Primordial Mass image as the video poster.
+- Added styling so the trailer uses the same framed layout as the project document viewer.
+- The player expects this local asset:
+  assets/media/project_PrimordialMass/primordialmass-trailer.mp4
+
+### Embedded PDF viewer
+File: project_pages/primordialmass.html, code/css/projectpage.css
+
+What changed:
+- Added an embedded PDF viewer using an iframe.
+- Made the project document collapsible with the same details/summary design used by the main portfolio page, including the animated disclosure icon and content transition.
+- The viewer expects this local asset:
+  assets/media/project_PrimordialMass/design-document.pdf
+- Added styling for a readable, full-width document viewer.
+
+### Those Who Remained document viewer
+File: project_pages/thosewhoremained.html, code/css/projectpage.css
+
+What changed:
+- Converted the project document section to the same collapsible design as the main portfolio page.
+- Kept the existing embedded PDF and local asset path unchanged.
+
 - Files changed:
   - `code/js/code.js` — added guards so the mobile menu toggle only runs when both the toggle button and `.nav-links` exist, preventing a runtime error that blocked the hamburger from opening.
   - `code/css/style.css` — adjusted stacking context: added `z-index: 1` to `.site-banner` and `z-index: 1100` to `.navbar` so the navigation and hamburger menu render above the banner image and remain clickable.

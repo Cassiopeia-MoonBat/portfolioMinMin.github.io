@@ -114,6 +114,29 @@ body {
   padding: 1rem;
 }
 
+.project-document {
+  background: rgba(219, 219, 219, 0.9);
+}
+
+.project-media {
+  background: rgba(219, 219, 219, 0.9);
+}
+
+.project-trailer {
+  width: 100%;
+  display: block;
+  background: #000;
+  border-radius: 12px;
+}
+
+.project-pdf {
+  width: 100%;
+  min-height: 720px;
+  border: 1px solid rgba(33,74,97,0.16);
+  border-radius: 12px;
+  background: #fff;
+}
+
 .screenshot-item {
   border-radius: 16px;
   overflow: hidden;
