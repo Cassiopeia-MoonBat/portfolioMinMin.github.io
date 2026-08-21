@@ -2,10 +2,10 @@
 /* Docs: ../documentation.md#css-root-variables */
 :root {
   --primary: #214a61;
-  --secondary: #eef4f7;
-  --accent: #8dd8e8;
+  --secondary: #42445e;
+  --accent: #a3a7a8;
   --text: #23343f;
-  --background: #e9f0f4;
+  --background: #c8d1d6;
 }
 
 * {
@@ -60,7 +60,7 @@ header {
 
 /* Docs: ../documentation.md#css-header-siteheader */
 .site-header {
-  background: linear-gradient(135deg, #18364a 0%, #2d5c74 45%, #477996 100%);
+  background: linear-gradient(135deg, #000000 0%, #1d2142 45%, #1d2145 100%);
   padding: 1rem 2rem 2rem;
 }
 
@@ -199,7 +199,7 @@ header {
 }
 
 .collapsible-section {
-  background: rgba(243,248,252,0.9);
+  background: rgba(219, 219, 219, 0.9);
   border: 1px solid rgba(60,106,136,0.16);
   border-radius: 16px;
   padding: 1rem 1.25rem;
@@ -322,7 +322,7 @@ header {
   text-decoration: none;
   outline: none;
   color: #af4040;
-  background-color: #6874C4;
+  background-color: #151f5f;
   border: none;
   border-radius: 15vmin;
   box-shadow: 0 9px #999;
@@ -331,7 +331,7 @@ header {
 
 /* Docs: ../documentation.md#css-button */
 .button:hover {
-  background-color: #5966c0;
+  background-color: #4252bb;
 }
 
 .button:active {
@@ -363,7 +363,7 @@ header {
   width: 28px;
   height: 28px;
   display: inline-flex;
-  align-items: center;
+  display: inline-block;
   justify-content: center;
   color: var(--primary);
   flex: 0 0 28px;
@@ -382,7 +382,6 @@ header {
   width: 20px;
   height: 20px;
   display: block;
-  vertical-align: middle;
 }
 
 .contact-text {
@@ -420,7 +419,7 @@ header {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: var(--primary);
+  background: linear-gradient(135deg, #000000 10%, #1d2142 45%, #1d2145 100%);
   color: #fff;
   margin-top: 2rem;
   font-size: 0.9rem;

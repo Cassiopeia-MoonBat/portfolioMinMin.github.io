@@ -186,3 +186,24 @@ What changed:
 - Added the same footer content from index.html to all project pages.
 - Updated code/css/projectpage.css so project page padding is applied inside .project-page and the footer can span the full browser width.
 
+### 2026-08-21 — SVG icon alignment fix
+
+- Files changed:
+  - `code/css/style.css` — changed `.contact-link .icon svg` from `display: block` to `display: inline-block` so `vertical-align: middle` applies and SVG icons align consistently with adjacent text. This fixes misaligned contact icons on small screens.
+
+ - Notes: This was a small CSS-only fix; test by resizing the browser to a mobile width and verifying contact icons align vertically with their labels.
+
+  ### 2026-08-21 — Add ArtStation contact link
+
+  - Files changed:
+    - `index.html` — added a new Contact list item linking to ArtStation, including an inline SVG icon using `currentColor` so it inherits the contact link color.
+
+  - Notes: Replace `https://www.artstation.com/your-profile` with your actual ArtStation profile URL.
+
+  ### 2026-08-21 — Move ArtStation SVG into Art section
+
+  - Files changed:
+    - `index.html` — removed the ArtStation list item from the Contact section and inserted only the ArtStation SVG icon inside the `#art` collapsible section's `.icon` span so the logo appears with the Art section content.
+
+  - Notes: The ArtStation link remains in the Art section (`https://www.artstation.com/minamooncat`). If you want the SVG to act as the clickable link itself, I can wrap the SVG with the anchor instead.
+
