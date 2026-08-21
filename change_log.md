@@ -157,7 +157,27 @@ What changed:
 - Added the same site-header and banner structure from index.html to all project pages.
 - Added the same footer content from index.html.
 - Updated code/css/projectpage.css so project page content is padded inside .project-page while the footer can span the full page width.
+## 2026-08-21 — Mobile menu / banner stacking fix
 
+- Files changed:
+  - `code/js/code.js` — added guards so the mobile menu toggle only runs when both the toggle button and `.nav-links` exist, preventing a runtime error that blocked the hamburger from opening.
+  - `code/css/style.css` — adjusted stacking context: added `z-index: 1` to `.site-banner` and `z-index: 1100` to `.navbar` so the navigation and hamburger menu render above the banner image and remain clickable.
+
+- Notes: test in a mobile viewport (or DevTools device toolbar) and click the hamburger icon — the menu should open above the banner. If issues persist, check the browser console for any errors.
+
+### 15. Applied project page footer design to the homepage
+File: index.html, code/css/style.css
+
+What changed:
+- Updated the homepage footer markup to use `.site-footer` and `.footer-content` consistent with project pages.
+- Added matching footer styles so the homepage footer has the same visual structure as project pages.
+
+### 16. Removed homepage body padding to eliminate corner whitespace
+File: code/css/style.css
+
+What changed:
+- Changed `body` padding from `3rem` to `0` so the page fills the viewport and the project/footer layout can extend to the edges.
+- Kept section padding inside `.section` so content spacing remains consistent without global page margins.
 ### 14. Added index-style header and full-width footer to project pages
 File: project_pages/*.html, code/css/projectpage.css
 
