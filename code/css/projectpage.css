@@ -32,15 +32,14 @@ body {
 }
 
 .project-hero img {
-  width: calc(100% + 4rem);
-  height: auto;
-  min-height: 240px;
-  max-height: 420px;
-  object-fit: cover;
-  margin: -2rem -2rem 0;
-  border-radius: 24px 24px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-resolution: from-image;
+  margin: auto;
+  /* border-radius: 24px 24px 0 0;
   border: 1px solid rgba(255,255,255,0.14);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18); */
 }
 
 .project-title-block {
@@ -58,7 +57,7 @@ body {
 .project-tagline {
   margin: 0;
   font-size: 1.1rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   max-width: 70ch;
 }
 
@@ -69,12 +68,12 @@ body {
 }
 
 .project-meta span {
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
   padding: 0.55rem 0.95rem;
   border-radius: 999px;
   color: #fff;
   font-size: 0.95rem;
-  border: 1px solid rgba(255,255,255,0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .project-content {
@@ -91,8 +90,8 @@ body {
 .project-description,
 .project-screenshots,
 .project-links {
-  background: rgba(255,255,255,0.92);
-  border: 1px solid rgba(60,106,136,0.16);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(60, 106, 136, 0.16);
   border-radius: 18px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
@@ -129,22 +128,22 @@ body {
   width: 100%;
   display: block;
   background: #000;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .project-pdf {
   width: 100%;
   min-height: 720px;
-  border: 1px solid rgba(33,74,97,0.16);
-  border-radius: 12px;
+  border: 1px solid rgba(33, 74, 97, 0.16);
+  border-radius: 10px;
   background: #fff;
 }
 
 .screenshot-item {
-  border-radius: 16px;
+  border-radius: 10px;
   overflow: hidden;
   background: #eef4f7;
-  border: 1px solid rgba(33,74,97,0.12);
+  border: 1px solid rgba(33, 74, 97, 0.12);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -162,7 +161,7 @@ body {
 }
 
 .project-links {
-  padding: 1.25rem;
+  padding: 1.0rem;
   display: grid;
   gap: 1rem;
 }
@@ -173,9 +172,9 @@ body {
   justify-content: space-between;
   gap: 0.75rem;
   padding: 0.95rem 1rem;
-  border-radius: 14px;
-  background: rgba(8,22,31,0.05);
-  border: 1px solid rgba(33,74,97,0.12);
+  border-radius: 10px;
+  background: rgba(8, 22, 31, 0.05);
+  border: 1px solid rgba(33, 74, 97, 0.12);
   text-decoration: none;
   color: var(--text);
   transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
@@ -201,18 +200,18 @@ body {
 .project-actions .button {
   min-width: 160px;
   font-size: 1rem;
-  color: var(--text);
-  background-color: rgba(141, 216, 232, 0.18);
-  border: 1px solid rgba(33,74,97,0.18);
-  padding: 0.95rem 1.4rem;
-  border-radius: 14px;
+  color: #fff;
+  background-color: #1d2145;
+  border: 1px solid rgba(92, 143, 173, 0.18);
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
   transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .project-actions .button:hover {
   transform: translateY(-2px);
-  background-color: rgba(141, 216, 232, 0.26);
-  border-color: rgba(33,74,97,0.28);
+  background-color: #222222;
+  border-color: rgba(92, 143, 173, 0.28);
 }
 
 @media (max-width: 860px) {
@@ -220,6 +219,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-
-
